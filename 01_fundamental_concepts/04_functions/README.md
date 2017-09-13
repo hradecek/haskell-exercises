@@ -25,7 +25,12 @@ h x y = (f . g) x y
 ## 1.4.2
 Suppose we curry the arguments of the function `delta`, so that we can write `delta a b c` rather than `delta (a, b, c)`.
 
-What is the typ of the curried version?
+What is the type of the curried version?
+
+Note: type of uncurried `delta` is:
+```
+delta :: (Float, Float, Float) -> Float
+```
 
 ## 1.4.3
 In mathematics one often uses logarithm to various bases; for example, `log_2`, `log_e` and `log_10`.
